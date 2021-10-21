@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="row">
+    <div class="card text-white bg-dark">
+      <div class="card-header" style="background-color: #ee0d6c">
+        <h3 align="center">Sobre el cifrado de Vigeniere</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-8" style="display:grid; align-items: center;">
+            <p style="text-align: justify">
+              El cifrado de Vigenere es el primer cifrado de sustitución
+              polialfabético del que se tenga registro, basado en diferentes
+              series de caracteres o letras del cifrado Cesar. Este tipo de
+              cifrado era llamado “Inquebrantable” ya que no era afectado por el
+              análisis de frecuencias aplicados a los cifradores de sustitución
+              monoalfabetica, al menos hasta el siglo XIX donde se encontró un
+              metodo para quebrantar el cifrado. Para cifrar mensajes mediante
+              este método, recurrimos a 26 alfabetos, los cuales son un
+              desplazamiento del anterior y que al juntarlos, estos alfabetos
+              forman lo que se conoce como tabla de Vigenere.
+            </p>
+          </div>
+          <div class="col">
+            <img src="/img/Vigenere.png" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card text-white bg-dark">
+      <div class="card-header" style="background-color: #ee0d6c">
+        <h3 align="center">Como se realiza el cifrado de Vigenere</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <img src="/img/Vigenere1.jpg" width="100%" />
+          </div>
+          <div class="col">
+            <img align="left" src="/img/Vigenere2.jpg" width="100%" />
+          </div>
+          <div class="col-6" align="left" style="display:grid; align-items: center;">
+            <p style="text-align: justify; align-items: center">
+              Para realizar el cifrado de Vigenere se necesita del texto en
+              claro a cifrar y de una llave, la cual se recomienda sea de la
+              misma longitud que el texto a cifrar, en caso de que sea menor se
+              repite la llave para cubrir con la longitud del mensaje.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-7" style="display:grid; align-items: center;">
+            <p style="text-align: justify; align-items: center">
+              Dentro de la tabla de Vigenere se busta la intersección entre la
+              letra del mensaje y la letra de la llave para ubicar la salida.
+            </p>
+          </div>
+          <div class="col">
+            <img src="/img/TablaZ.png" width="100%" />
+          </div>
+          <div class="col">
+            <img align="left" src="/img/Vigenere3.jpg" width="100%" />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <img align="left" src="/img/Vigenere4.jpg" width="100%" />
+          </div>
+          <div class="col-7" style="display:grid; align-items: center;">
+            <p style="text-align: justify; align-items: center">
+              Este proceso se itera en la longitud del mensaje hasta que se obtiene el texto cifrado.
+            </p>
+            <h3 style="text-align: justify;">En este caso, con el texto <i>"HOLAMUNDO"</i> y la llave <i>"SEGURO"</i> obtuvimos <i>"ZSRUDIFHU"</i> como texto cifrado</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

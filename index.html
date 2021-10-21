@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Eduardo Martinez</title>
+    <link rel="icon" href="img/icon_2.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/be74d63017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" onclick="muestraFrame(1);">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  onclick="muestraFrame(2)"
+                  >Formacion academica</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  onclick="muestraFrame(3)"
+                  >Hobies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  onclick="muestraFrame(4)"
+                  >Criptografia</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="frameInformacion" class="frameInformacion"  style = "width: 100%;"></div>
+      <div
+        class="frameFormacion"
+        id="frameFormacion"
+        style="display: none; width: 100%;"
+      ></div>
+      <div class="frameHobies" id="frameHobies" style="display: none; width: 100%;"></div>
+      <div
+        class="frameCriptografia"
+        id="frameCriptografia"
+        style="display: none; width: 100%;"
+      ></div>
+    </main>
+    <footer class="text-center text-lg-start bg-dark text-light">
+      <section
+        class="
+          d-flex
+          justify-content-center justify-content-lg-between
+          p-4
+          border-bottom
+        "
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Redes sociales y contacto</span>
+        </div>
+
+        <div>
+          <a
+            href="https://www.facebook.com/lalo.martinez.5891004/"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/lalo_mart10" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCnIhAZhCRCSXjje8Q2guqNg"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/lalomtz011/"
+            class="me-4 text-reset"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        2021 By:
+        <a class="text-reset fw-bold">Eduardo Martinez</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".frameInformacion").load("./informacion.html");
+    });
+    $(document).ready(function () {
+      $(".frameFormacion").load("./formacion.html");
+    });
+    $(document).ready(function () {
+      $(".frameHobies").load("./hobies.html");
+    });
+    $(document).ready(function () {
+      $(".frameCriptografia").load("./criptografia.html");
+    });
+  </script>
+</html>
